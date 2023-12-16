@@ -2,7 +2,7 @@ import React from "react"
 
 function Projects(){
     return (
-        <p>My Project Page</p>
+        <h1>My Project Page</h1>
     )
 }
 

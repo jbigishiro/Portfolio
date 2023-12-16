@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom"
 function NavBar() {
     return (
         <nav id="navbar">
-            <NavLink exact to="/"> Home </NavLink>
-            <NavLink to="/resume"> Resume </NavLink>
-            <NavLink to="/projects"> Projects </NavLink>
-            <NavLink to="/blogs"> Blogs </NavLink>
-            <NavLink to="/contact"> Contact </NavLink>
+            <NavLink className="navlink" exact to="/"> Home </NavLink>
+            <NavLink className="navlink" to="/resume"> Resume </NavLink>
+            <NavLink className="navlink" to="/projects"> Projects </NavLink>
+            <NavLink className="navlink" to="/blogs"> Blogs </NavLink>
+            <NavLink className="navlink" to="/contact"> Contact </NavLink>
         </nav>
     );
 }

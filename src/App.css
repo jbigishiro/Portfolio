@@ -1,8 +1,134 @@
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+#main {
+  display: grid;
+  grid-template-columns: 1fr 5fr; 
+  grid-template-rows: 1fr auto; 
+  min-height: 100vh;
+  grid-template-areas:
+    "nav content"
+    "footer footer"; 
+    background: rgb(187, 244, 187);
+    
+}
+
+#nav {
+  grid-area: nav; 
+  background: rgb(125, 229, 240);
+  padding: 1rem;
+  text-align: center;
+  
+}
+
+#content {
+  grid-area: content;
+  background: rgb(206, 236, 206);
+  padding: 3rem;
+}
+
+#footer {
+  grid-area: footer; 
+  background: rgb(206, 236, 206);
+  padding: 1rem;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 20px
+}
+
 #navbar {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  text-align: center;
-  padding: 1rem;
+  flex-direction: column;
+  padding-top: 20px
 }
+
+.navlink {
+  font-size: 25px;
+  text-decoration: none;
+  text-align: left;
+  padding: 2%
+}
+
+.navlink:hover {
+ color: Green 
+}
+
+#img1 {
+  width : 80%;
+  border-radius: 50%;
+}
+#img2 { 
+  width : 50%;
+}
+
+#home {
+  width: 70%;
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: left;
+}
+
+#home p {
+  font-size: 20px;
+}
+
+#home a {
+  font-size: 25px;
+  text-decoration: none;
+}
+#resume {
+  width: 80%;
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: left;
+}
+#technical li {
+  display: inline;
+  list-style: square;
+  margin-right: 15px;
+}
+
+
+@media (max-width: 700px) {
+  #main {
+    grid-template-rows:auto 1fr auto; 
+    grid-template-areas: 
+    "nav nav"
+    "content content"
+    "footer footer"
+  }
+
+  #navbar {
+    flex-direction: row;
+  }
+
+  #img1 {
+    width: 30%
+  }
+
+  #home {
+    width: 95%;
+    display: block;
+    margin: 0 auto 3px auto;
+    text-align: left;
+  }
+  #resume {
+    width: 100%;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: left;
+  }
+  #content {
+    grid-area: content;
+    background: rgb(206, 236, 206);
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
