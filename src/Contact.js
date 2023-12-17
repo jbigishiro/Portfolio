@@ -7,7 +7,7 @@ function Contact(){
             <p>Fort Worth, TX 76120</p>
             <p>📞 817-525-3308</p>
             <p>📧 justin.rvd@gmail.com</p>
-            <p><a href="https://www.linkedin.com/in/justin-bigishiro/">Linkedin</a></p>
+            <p><a href="https://www.linkedin.com/in/justin-bigishiro/" target="_blank" rel="noreferrer">Linkedin</a></p>
         </div>
         
     )
